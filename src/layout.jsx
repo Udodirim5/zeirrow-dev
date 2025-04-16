@@ -13,7 +13,7 @@ export const metadata = {
   openGraph: {
     title: "zeirrow.dev",
     description: "Frontend web developer portfolio",
-    url: "https://zeirrow.dev",
+    url: "https://zeirrow-dev-jz8c.vercel.app",
     siteName: "zeirrow.dev",
     images: [
       {
