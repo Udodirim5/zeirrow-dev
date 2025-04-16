@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { myInfo } from "../../data/data";
 import { useOutsideClick } from "../hooks/useOutsideClick";
+import Link from "next/link";
 
 const Header = ({ activeSection }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -81,13 +82,15 @@ const Header = ({ activeSection }) => {
           >
             {darkMode ? "☀️" : "🌙"}
           </button> */}
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="px-4 py-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-sm font-medium shadow-lg hover:shadow-cyan-500/30 transition-all"
-          >
-            Hire Me
-          </motion.button>
+          <Link href="#contact">
+            <motion.span
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-4 py-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-sm font-medium shadow-lg hover:shadow-cyan-500/30 transition-all"
+            >
+              Hire Me
+            </motion.span>
+          </Link>
         </div>
 
         {/* Mobile Menu */}
@@ -130,14 +133,16 @@ const Header = ({ activeSection }) => {
                   >
                     {darkMode ? "☀️" : "🌙"}
                   </button> */}
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="px-4 py-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-sm font-medium shadow-lg hover:shadow-cyan-500/30 transition-all"
-                    onClick={handleNavClick}
-                  >
-                    Hire Me
-                  </motion.button>
+                  <Link href="#contact">
+                    <motion.span
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="px-4 py-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-sm font-medium shadow-lg hover:shadow-cyan-500/30 transition-all"
+                      onClick={handleNavClick}
+                    >
+                      Hire Me
+                    </motion.span>
+                  </Link>
                 </div>
               </div>
             </motion.div>
