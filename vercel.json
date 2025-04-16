@@ -2,7 +2,7 @@
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
   "functions": {
     "api/contact.js": {
-      "runtime": "edge"
+      "runtime": "nodejs18.x"
     }
   }
 }
