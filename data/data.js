@@ -6,6 +6,7 @@ import {
   FaGitAlt,
   FaNodeJs,
 } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
 import {
   SiTypescript,
   SiTailwindcss,
@@ -37,6 +38,7 @@ export const skills = [
   { name: "JavaScript", icon: FaJsSquare, color: "#F0DB4F" },
   { name: "Tailwind CSS", icon: SiTailwindcss, color: "#38B2AC" },
   { name: "React", icon: FaReact, color: "#61DBFB" },
+  { name: "Next.js", icon: RiNextjsFill, color: "#000000" },
   { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
   { name: "Redux", icon: SiRedux, color: "#764ABC" },
   { name: "Node.js", icon: FaNodeJs, color: "#68A063" },

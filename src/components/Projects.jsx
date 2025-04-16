@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";

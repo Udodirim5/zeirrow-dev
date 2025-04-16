@@ -5,9 +5,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
-// import ParticleBackground from "@/ui/ParticleBackground";
 
-// pages/index.js
 const Home = () => {
   const [darkMode, setDarkMode] = useState(true);
   const [activeSection, setActiveSection] = useState("home");
@@ -45,22 +43,15 @@ const Home = () => {
         darkMode ? "bg-gray-900 text-gray-100" : "bg-gray-50 text-gray-900"
       }`}
     >
-      {/* <ParticleBackground /> */}
-
       <Header
         activeSection={activeSection}
         darkMode={darkMode}
         setDarkMode={setDarkMode}
       />
-
       <Hero />
-
       <Projects />
-
       <About />
-
       <Contact />
-
       <Footer />
     </div>
   );

@@ -1,5 +1,4 @@
 import { useState } from "react";
-// eslint-disable-next-line
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";

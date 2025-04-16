@@ -1,12 +1,4 @@
-// eslint-disable-next-line
 import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa";
-import {
-  SiTailwindcss,
-  SiTypescript,
-  SiNextdotjs,
-  SiGraphql,
-} from "react-icons/si";
 import { experience, skills } from "../../data/data";
 
 const About = () => {
@@ -21,7 +13,7 @@ const About = () => {
           className="mb-16 text-center"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">
+            <span className="via-purple-600 bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">
               About Me
             </span>
           </h2>
@@ -83,14 +75,13 @@ const About = () => {
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              {/* eslint-disable-next-line no-unused-vars */}
               {skills.map(({ name, icon: Icon, color }, index) => (
                 <motion.div
                   key={index}
                   whileHover={{ y: -5 }}
                   className="flex flex-col items-center p-4 bg-gray-800/50 rounded-lg border border-gray-800 hover:border-cyan-400/30 transition-colors"
                 >
-                  <Icon className="text-4xl " style={{ color }} />
+                  <Icon className="text-4xl" style={{ color }} />
                   <span className="mt-2 text-sm">{name}</span>
                 </motion.div>
               ))}

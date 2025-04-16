@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";

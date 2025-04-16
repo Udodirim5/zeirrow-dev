@@ -1,6 +1,5 @@
-// eslint-disable-next-line
 import { motion } from "framer-motion";
-import { FiMail, FiDownload, FiExternalLink } from "react-icons/fi";
+import { FiDownload } from "react-icons/fi";
 import { myInfo } from "../../data/data";
 import Image from "next/image";
 const Hero = () => {
@@ -34,7 +33,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-3xl md:text-6xl font-bold mb-4"
         >
-          <span className="bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">
+          <span className="via-purple-600 bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">
             {myInfo.name}
           </span>
         </motion.h1>
@@ -46,7 +45,7 @@ const Hero = () => {
           className="text-xl md:text-2xl text-gray-400 mb-8 max-w-2xl"
         >
           <span className="text-cyan-400">React</span> Developer &{" "}
-          <span className="text-blue-400">Specialist</span> 
+          <span className="text-blue-400">Specialist</span>
         </motion.p>
 
         <motion.div
