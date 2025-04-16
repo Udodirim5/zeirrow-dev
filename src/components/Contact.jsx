@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import { myInfo } from "../../data/data";
 import toast from "react-hot-toast";
@@ -31,6 +31,12 @@ const Contact = () => {
       bg: "bg-cyan-500/20",
       url: myInfo.contact.twitter,
     },
+    {
+      icon: <FaWhatsapp />,
+      color: "hover:text-green-400",
+      bg: "bg-green-500/20",
+      url: `https://wa.me/${myInfo.contact.phone}`,
+    }
   ];
 
   const handleSubmit = async (e) => {
