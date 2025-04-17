@@ -43,11 +43,13 @@ const Projects = () => {
                     src={project.screenshot}
                     alt="screenshot of the site"
                     className="text-gray-500 text-lg"
-                    onError={(e) => { e.target.src = "/images/fallback-image.png"; }}
+                    onError={(e) => {
+                      e.target.src = "/images/fallback-image.png";
+                    }}
                     loading="lazy"
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity flex items-end p-6">
                   <div className="flex gap-3">
                     <motion.a
                       whileHover={{
